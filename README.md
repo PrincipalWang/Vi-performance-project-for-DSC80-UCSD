@@ -40,7 +40,7 @@ Furthermore, among these columns, I find out that league ban1 ban2 ban3 ban4 ban
 | WLDs     | DWG KIA    | Yuumi    | Azir    | Kalista  | Vi     | Poppy  | Sylas   | Nami         | Lucian  | Wukong  | Aatrox  |        1 |            0 |         3 |             0 |            1 |            1 |           1 |           0 | LCK             |
 | WLDs     | DRX        | Renekton | Kalista | Ahri     | Amumu  | Lulu   | Yuumi   | Sylas        | Zeri    | Wukong  | Fiora   |        1 |            0 |         2 |             0 |            0 |            0 |           0 |           0 | LCK             |
 ## Analysis
-We have a pie chart of Vi win rate in lpl.  
+We have a pie chart of Vi win rate in lpl.
 <iframe
   src="assets/lpl_Vi_win_rate.html"
   width="800"
@@ -49,7 +49,7 @@ We have a pie chart of Vi win rate in lpl.
 ></iframe>
 This shows that the lpl Vi winning rate is nearly 1 to 1.  
   
-We have a pie chart of Vi win rate in lck.  
+We have a pie chart of Vi win rate in lck.
 <iframe
   src="assets/lck_Vi_win_rate.html"
   width="800"
@@ -58,7 +58,7 @@ We have a pie chart of Vi win rate in lck.
 ></iframe>
 This shows that the lck Vi winning rate is nearly 1 to 1.  
   
-We have a pie chart of Vi win rate in lpl in wlds.  
+We have a pie chart of Vi win rate in lpl in wlds.
 <iframe
   src="assets/wlds_lpl_Vi_win_rate.html"
   width="800"
@@ -67,7 +67,7 @@ We have a pie chart of Vi win rate in lpl in wlds.
 ></iframe>
 This shows that the lpl Vi in wlds winning rate is nearly 1 to 1.  
   
-We have a pie chart of Vi win rate in lck in wlds.  
+We have a pie chart of Vi win rate in lck in wlds.
 <iframe
   src="assets/wlds_lck_Vi_win_rate.html"
   width="800"
