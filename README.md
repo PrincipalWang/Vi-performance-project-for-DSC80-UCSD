@@ -7,15 +7,15 @@ This analysis will mainly focus on one topic: Is lpl team more likely to pick Vi
 ## Data Cleaning
 To save time in the further data cleaning steps, I first only keep the relevant columns: league ban1 ban2 ban3 ban4 ban5 pick1 pick2 pick3 pick4 pick5 result firstblood dragons firstherald firsttower firstbaron. I decide to keep rows that is related to lpl and lck teams.<br>
 Furthermore, among these columns, I find out that league ban1 ban2 ban3 ban4 ban5 pick1 pick2 pick3 pick4 pick5 columns show the preference of Vi and result firstblood dragons firstherald firsttower firstbaron columns show the in game performance.<br>
-This lpl local mathes.<br>
+# This lpl local mathes.
 | league   | ban1    | ban2    | ban3         | ban4    | ban5      | pick1      | pick2   | pick3     | pick4        | pick5   |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
 |:---------|:--------|:--------|:-------------|:--------|:----------|:-----------|:--------|:----------|:-------------|:--------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
 | LPL      | Senna   | Orianna | Gangplank    | Azir    | Swain     | Gwen       | Wukong  | Aphelios  | Renata Glasc | Vex     |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
 | LPL      | Nidalee | Kindred | Lucian       | LeBlanc | Lissandra | Kalista    | Viego   | Jayce     | Ahri         | Rell    |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
 | LPL      | Nidalee | Kindred | Ahri         | Jax     | Galio     | Senna      | Viego   | Seraphine | Zoe          | Kayle   |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
 | LPL      | Gwen    | Lucian  | Gnar         | Azir    | Swain     | Tahm Kench | Wukong  | Ezreal    | Taliyah      | Riven   |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
-| LPL      | Senna   | Gwen    | Renata Glasc | Rakan   | Rell      | Wukong     | Draven  | Nautilus  | Swain        | Gnar    |        0 |            0 |         3 |           nan |          nan |          nan |           0 |           0 | <br>
-This is lck local matches.<br>
+| LPL      | Senna   | Gwen    | Renata Glasc | Rakan   | Rell      | Wukong     | Draven  | Nautilus  | Swain        | Gnar    |        0 |            0 |         3 |           nan |          nan |          nan |           0 |           0 |
+# This is lck local matches.<br>
 | league   | ban1         | ban2         | ban3      | ban4         | ban5         | pick1   | pick2   | pick3    | pick4    | pick5        |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
 |:---------|:-------------|:-------------|:----------|:-------------|:-------------|:--------|:--------|:---------|:---------|:-------------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
 | LCK      | Diana        | Lissandra    | Jax       | Karma        | Renata Glasc | Gwen    | Kai'Sa  | Ahri     | Nautilus | Trundle      |        1 |            0 |         4 |             1 |            1 |            1 |           1 |           0 |
@@ -23,7 +23,7 @@ This is lck local matches.<br>
 | LCK      | Twisted Fate | Renata Glasc | Taliyah   | Nautilus     | Kayle        | Ezreal  | Viego   | Gnar     | Swain    | Rakan        |        1 |            1 |         4 |             0 |            0 |            0 |           0 |           0 |
 | LCK      | Lucian       | Gwen         | Diana     | Lissandra    | Karma        | Wukong  | Kai'Sa  | Ahri     | Sejuani  | Gragas       |        0 |            0 |         2 |             1 |            1 |            1 |           0 |           0 |
 | LCK      | Swain        | Diana        | Lissandra | Renata Glasc | Galio        | Gwen    | Kai'Sa  | Nautilus | Nocturne | Twisted Fate |        1 |            1 |         3 |             1 |            1 |            1 |           1 |           0 | \n
-This is lpl matches in wlds.
+# This is lpl matches in wlds.
 | league   | teamname            | ban1    | ban2     | ban3      | ban4   | ban5         | pick1   | pick2   | pick3   | pick4    | pick5    |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked | belong_league   |
 |:---------|:--------------------|:--------|:---------|:----------|:-------|:-------------|:--------|:--------|:--------|:---------|:---------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|:----------------|
 | WLDs     | Royal Never Give Up | Kalista | Wukong   | Lucian    | Poppy  | Sejuani      | Yuumi   | Vi      | Sivir   | Taliyah  | Jax      |        1 |            1 |         3 |           nan |          nan |          nan |           0 |           1 | LPL             |
@@ -31,7 +31,7 @@ This is lpl matches in wlds.
 | WLDs     | EDward Gaming       | Fiora   | Vi       | Poppy     | Braum  | Renata Glasc | Sejuani | Sylas   | Sivir   | Nautilus | Renekton |        0 |            1 |         2 |           nan |          nan |          nan |           1 |           0 | LPL             |
 | WLDs     | Royal Never Give Up | Lucian  | Yuumi    | Azir      | Amumu  | Zilean       | Wukong  | Zeri    | Taliyah | Lulu     | Aatrox   |        1 |            0 |         3 |           nan |          nan |          nan |           1 |           0 | LPL             |
 | WLDs     | EDward Gaming       | Poppy   | Fiora    | Lissandra | Aatrox | Renekton     | Vi      | Taliyah | Sivir   | Gragas   | Nautilus |        1 |            0 |         2 |           nan |          nan |          nan |           0 |           1 | LPL             |
-This is lck matches in wlds.
+# This is lck matches in wlds.
 | league   | teamname   | ban1     | ban2    | ban3     | ban4   | ban5   | pick1   | pick2        | pick3   | pick4   | pick5   |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked | belong_league   |
 |:---------|:-----------|:---------|:--------|:---------|:-------|:-------|:--------|:-------------|:--------|:--------|:--------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|:----------------|
 | WLDs     | DWG KIA    | Yuumi    | Azir    | Nautilus | Ornn   | Poppy  | Sejuani | Lucian       | Nami    | Swain   | Aatrox  |        1 |            1 |         4 |             1 |            1 |            0 |           0 |           0 | LCK             |
