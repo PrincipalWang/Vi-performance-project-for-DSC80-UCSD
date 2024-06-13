@@ -122,7 +122,7 @@ Classification Report:  <br>
     accuracy                           0.92       252  <br>
    macro avg       0.46      0.50      0.48       252  <br>
 weighted avg       0.85      0.92      0.88       252  <br>
-After fitting the model, my accuracy score on the training data is 0.9206. This means that our model is able to correctly predict 92.06% of data. This accuracy score is really high.
+After fitting the model, my accuracy score on the training data is 0.9206. This means that my model is able to correctly predict 92.06% of data. This accuracy score is really high.
 # Final Model
 In my final model, I added 3 more features: firstherald firsttower and firstbaron. These show the ability of map controlling.  <br>
 Accuracy: 0.9032258064516129  <br>
@@ -133,7 +133,7 @@ Classification Report:  <br>
     accuracy                           0.90        31  <br>
    macro avg       0.45      0.50      0.47        31  <br>
 weighted avg       0.82      0.90      0.86        31  <br>
-The accuracy score is now 0.9032, meaning our model is able to correctly predict 90.32% of our data. Although the score goes down, mainly because the increasement of complexity of data, we still have a high F-1 score 0.95,meaning both of my precision and recall are close to 1.  
+The accuracy score is now 0.9032, meaning my model is able to correctly predict 90.32% of my data. Although the score goes down, mainly because the increasement of complexity of data, I still have a high F-1 score 0.95,meaning both of my precision and recall are close to 1.  
 # Fairness Analysis
 ## Hypotheses
 ## Null Hypothesis (H0)
