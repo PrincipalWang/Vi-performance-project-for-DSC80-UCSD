@@ -150,4 +150,4 @@ P-value: 1.0
   height="600"
   frameborder="0"
 ></iframe>
-After performing the permutation test, the result p-value we got is 1.0, which is larger than the 0.05 significance level. Consequently, I fail to reject the null hypothesis. This outcome implies that my model predicts Vi appearance according to the in-game performance value. Consequently, my model appears to be fair, exhibiting no discernible bias towards one group over the other based on the specified criteria.
+After performing the permutation test, the result p-value I got is 1.0, which is larger than the 0.05 significance level. Consequently, I fail to reject the null hypothesis. This outcome implies that my model predicts Vi appearance according to the in-game performance value. Consequently, my model appears to be fair, exhibiting no discernible bias towards one group over the other based on the specified criteria.
