@@ -8,13 +8,13 @@ This analysis will mainly focus on one topic: Is lpl team more likely to pick Vi
 To save time in the further data cleaning steps, I first only keep the relevant columns: league ban1 ban2 ban3 ban4 ban5 pick1 pick2 pick3 pick4 pick5 result firstblood dragons firstherald firsttower firstbaron. I decide to keep rows that is related to lpl and lck teams.<br>
 Furthermore, among these columns, I find out that league ban1 ban2 ban3 ban4 ban5 pick1 pick2 pick3 pick4 pick5 columns show the preference of Vi and result firstblood dragons firstherald firsttower firstbaron columns show the in game performance.<br>
 ## This lpl local mathes.
-| league   | ban1    | ban2... | pick4        | pick5   |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
-|:---------|:--------|:--------|:-------------|:--------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
-| LPL      | Senna   | Orianna | Renata Glasc | Vex     |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
-| LPL      | Nidalee | Kindred | Ahri         | Rell    |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
-| LPL      | Nidalee | Kindred | Zoe          | Kayle   |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
-| LPL      | Gwen    | Lucian  | Taliyah      | Riven   |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
-| LPL      | Senna   | Gwen    | Swain        | Gnar    |        0 |            0 |         3 |           nan |          nan |          nan |           0 |           0 |
+| league   | ban1    | ban2    | ... | pick4        | pick5   |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
+|:---------|:--------|:--------|:----|:-------------|:--------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
+| LPL      | Senna   | Orianna | ... | Renata Glasc | Vex     |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
+| LPL      | Nidalee | Kindred | ... | Ahri         | Rell    |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
+| LPL      | Nidalee | Kindred | ... | Zoe          | Kayle   |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
+| LPL      | Gwen    | Lucian  | ... | Taliyah      | Riven   |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
+| LPL      | Senna   | Gwen    | ... | Swain        | Gnar    |        0 |            0 |         3 |           nan |          nan |          nan |           0 |           0 |
 ## This is lck local matches.
 | league   | ban1         | ban2         | ban3      | ban4         | ban5         | pick1   | pick2   | pick3    | pick4    | pick5        |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
 |:---------|:-------------|:-------------|:----------|:-------------|:-------------|:--------|:--------|:---------|:---------|:-------------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
