@@ -75,3 +75,81 @@ We have a pie chart of Vi win rate in lck in wlds.
   frameborder="0"
 ></iframe>
 This shows that the lck Vi in wlds winning rate is nearly 1 to 1.  
+
+# Assessment of Missingness
+## NMAR Analysis
+In my data, I believe the columns league, teamname, ban1, ban2, ban3, ban4, ban5, pick1, pick2, pick3, pick4, pick5, result are all Not Missing At Random. They seems that they do not have a trend of missing.
+Also, after checking, firstblood and dragons do not have missing, too.  
+For the firsttherald firsttower and firstbarron missing in LPL part I will sat it is Not Missing At Random since LPL does not put this data on the dataset.  
+## Missingness Dependency
+<iframe
+  src="assets/Empirical Distribution of the Test Statistic (firstblood).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+Observed Stat (firstblood): 0.0  
+P-value (firstblood): 0.533  
+Observed Stat (dragons): 0.1930716060049682  
+P-value (dragons): 0.013  
+Observed Stat (Vi-picked): 0.007247002916081657  
+P-value (Vi-picked): 0.357  
+
+Dependent Columns (p < 0.05): ['dragons']  
+Independent Columns (p >= 0.05): ['firstblood', 'Vi-picked']  
+The permutation tests reveal that the missingness of firsttherald significantly depends on the dragons column, with a p-value of 0.006, indicating a relationship between the two. However, the missingness of firsttherald does not significantly depend on the firstblood (p-value: 0.508) or Vi-picked (p-value: 0.398) columns, suggesting that any observed differences in these columns between rows with and without missing firsttherald values are likely due to random chance. Therefore, we can conclude that the occurrence of missing values in firsttherald is influenced by the number of dragons secured but not by whether the team got the first blood or whether Vi was picked.  
+# Step 4: Hypothesis Testing
+## Null Hypothesis (H0):
+H0: There is no difference in the likelihood of Vi winning a match between the LPL and LCK leagues.
+## Alternative Hypothesis (H1)
+H1: There is a difference in the likelihood of Vi winning a match between the LPL and LCK leagues.
+## Test Statistic
+The test statistic for this comparison is the two-proportion z-test.
+## Significance Level
+5%  
+After the hypothesis test performed, with p-values of 0.078 and 0.424, I fail to reject the null hypothesis. There is no significant difference in Vi's win rates between LPL and LCK, no matter local matches or wld matches.  
+# Step 5: Framing a Prediction Problem
+Can we predict if Vi will be picked or banned in a match based on in-game statistics and match metadata?
+# Step 6: Baseline Model
+In the previous sections, I found out that win rate of Vi is not that different between lpl and lck. Then can we use the data of in game performace to judge if Vi is picked?  
+First, I only used firstblood and dragons. This shows the ganking ability.  
+Accuracy: 0.9206349206349206  
+
+Classification Report:  
+               precision    recall  f1-score   support  
+
+           0       0.92      1.00      0.96       232  
+           1       0.00      0.00      0.00        20  
+    accuracy                           0.92       252  
+   macro avg       0.46      0.50      0.48       252  
+weighted avg       0.85      0.92      0.88       252  
+After fitting the model, my accuracy score on the training data is 0.9206. This means that our model is able to correctly predict 92.06% of data. This accuracy score is really high.
+# Step 7: Final Model
+In my final model, I added 3 more features: firstherald firsttower and firstbaron. These show the ability of map controlling.  
+Accuracy: 0.9032258064516129  
+
+Classification Report:  
+               precision    recall  f1-score   support  
+
+           0       0.90      1.00      0.95        28  
+           1       0.00      0.00      0.00         3  
+    accuracy                           0.90        31  
+   macro avg       0.45      0.50      0.47        31  
+weighted avg       0.82      0.90      0.86        31  
+The accuracy score is now 0.9032, meaning our model is able to correctly predict 90.32% of our data. Although the score goes down, mainly because the increasement of complexity of data, we still have a high F-1 score 0.95,meaning both of my precision and recall are close to 1.  
+# Step 8: Fairness Analysis
+## Hypotheses
+## Null Hypothesis (H0)
+My model is fair. Its accuracy for matches where Vi is picked is the same as its accuracy for matches where Vi is not picked.
+## Alternative Hypothesis (H1)
+My model is unfair. Its accuracy for matches where Vi is picked is not the same as its accuracy for matches where Vi is not picked.  
+Overall Accuracy: 0.9206349206349206  
+Observed Accuracy Difference: -1.0  
+P-value: 1.0  
+<iframe
+  src="assets/Empirical Distribution of the Test Statistic (Accuracy Difference).html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+After performing the permutation test, the result p-value we got is 1.0, which is larger than the 0.05 significance level. Consequently, I fail to reject the null hypothesis. This outcome implies that my model predicts Vi appearance according to the in-game performance value. Consequently, my model appears to be fair, exhibiting no discernible bias towards one group over the other based on the specified criteria.
