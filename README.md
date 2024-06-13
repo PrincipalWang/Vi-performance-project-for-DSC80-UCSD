@@ -98,7 +98,7 @@ Dependent Columns (p < 0.05): ['dragons']  <br>
 Independent Columns (p >= 0.05): ['firstblood', 'Vi-picked']  <br>
 The permutation tests reveal that the missingness of firsttherald significantly depends on the dragons column, with a p-value of 0.006, indicating a relationship between the two. However, the missingness of firsttherald does not significantly depend on the firstblood (p-value: 0.508) or Vi-picked (p-value: 0.398) columns, suggesting that any observed differences in these columns between rows with and without missing firsttherald values are likely due to random chance. Therefore, we can conclude that the occurrence of missing values in firsttherald is influenced by the number of dragons secured but not by whether the team got the first blood or whether Vi was picked.  
 
-# Step 4: Hypothesis Testing
+# Hypothesis Testing
 ## Null Hypothesis (H0):
 H0: There is no difference in the likelihood of Vi winning a match between the LPL and LCK leagues.
 ## Alternative Hypothesis (H1)
@@ -109,9 +109,9 @@ The test statistic for this comparison is the two-proportion z-test.
 5%  
 ## Result
 After the hypothesis test performed, with p-values of 0.078 and 0.424, I fail to reject the null hypothesis. There is no significant difference in Vi's win rates between LPL and LCK, no matter local matches or wld matches.  
-# Step 5: Framing a Prediction Problem
+# Framing a Prediction Problem
 Can we predict if Vi will be picked or banned in a match based on in-game statistics and match metadata?
-# Step 6: Baseline Model
+# Baseline Model
 In the previous sections, I found out that win rate of Vi is not that different between lpl and lck. Then can we use the data of in game performace to judge if Vi is picked?  <br>
 First, I only used firstblood and dragons. This shows the ganking ability.  <br>
 Accuracy: 0.9206349206349206  <br>
@@ -123,7 +123,7 @@ Classification Report:  <br>
    macro avg       0.46      0.50      0.48       252  <br>
 weighted avg       0.85      0.92      0.88       252  <br>
 After fitting the model, my accuracy score on the training data is 0.9206. This means that our model is able to correctly predict 92.06% of data. This accuracy score is really high.
-# Step 7: Final Model
+# Final Model
 In my final model, I added 3 more features: firstherald firsttower and firstbaron. These show the ability of map controlling.  <br>
 Accuracy: 0.9032258064516129  <br>
 Classification Report:  <br>
@@ -134,7 +134,7 @@ Classification Report:  <br>
    macro avg       0.45      0.50      0.47        31  <br>
 weighted avg       0.82      0.90      0.86        31  <br>
 The accuracy score is now 0.9032, meaning our model is able to correctly predict 90.32% of our data. Although the score goes down, mainly because the increasement of complexity of data, we still have a high F-1 score 0.95,meaning both of my precision and recall are close to 1.  
-# Step 8: Fairness Analysis
+# Fairness Analysis
 ## Hypotheses
 ## Null Hypothesis (H0)
 My model is fair. Its accuracy for matches where Vi is picked is the same as its accuracy for matches where Vi is not picked.
