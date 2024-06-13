@@ -15,7 +15,7 @@ Furthermore, among these columns, I find out that league ban1 ban2 ban3 ban4 ban
 | LPL      | Nidalee | Kindred | Ahri         | Jax     | Galio     | Senna      | Viego   | Seraphine | Zoe          | Kayle   |        0 |            0 |         1 |           nan |          nan |          nan |           0 |           0 |
 | LPL      | Gwen    | Lucian  | Gnar         | Azir    | Swain     | Tahm Kench | Wukong  | Ezreal    | Taliyah      | Riven   |        1 |            1 |         4 |           nan |          nan |          nan |           0 |           0 |
 | LPL      | Senna   | Gwen    | Renata Glasc | Rakan   | Rell      | Wukong     | Draven  | Nautilus  | Swain        | Gnar    |        0 |            0 |         3 |           nan |          nan |          nan |           0 |           0 |
-## This is lck local matches.<br>
+## This is lck local matches.
 | league   | ban1         | ban2         | ban3      | ban4         | ban5         | pick1   | pick2   | pick3    | pick4    | pick5        |   result |   firstblood |   dragons |   firstherald |   firsttower |   firstbaron |   Vi-banned |   Vi-picked |
 |:---------|:-------------|:-------------|:----------|:-------------|:-------------|:--------|:--------|:---------|:---------|:-------------|---------:|-------------:|----------:|--------------:|-------------:|-------------:|------------:|------------:|
 | LCK      | Diana        | Lissandra    | Jax       | Karma        | Renata Glasc | Gwen    | Kai'Sa  | Ahri     | Nautilus | Trundle      |        1 |            0 |         4 |             1 |            1 |            1 |           1 |           0 |
@@ -40,38 +40,38 @@ Furthermore, among these columns, I find out that league ban1 ban2 ban3 ban4 ban
 | WLDs     | DWG KIA    | Yuumi    | Azir    | Kalista  | Vi     | Poppy  | Sylas   | Nami         | Lucian  | Wukong  | Aatrox  |        1 |            0 |         3 |             0 |            1 |            1 |           1 |           0 | LCK             |
 | WLDs     | DRX        | Renekton | Kalista | Ahri     | Amumu  | Lulu   | Yuumi   | Sylas        | Zeri    | Wukong  | Fiora   |        1 |            0 |         2 |             0 |            0 |            0 |           0 |           0 | LCK             |
 ## Analysis
-We have a pie chart of Vi win rate in lpl.
+We have a pie chart of Vi win rate in lpl.  
 <iframe
   src="assets/lpl_Vi_win_rate.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
-This shows that the lpl Vi winning rate is nearly 1 to 1.
-
-We have a pie chart of Vi win rate in lck.
+This shows that the lpl Vi winning rate is nearly 1 to 1.  
+  
+We have a pie chart of Vi win rate in lck.  
 <iframe
   src="assets/lck_Vi_win_rate.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
-This shows that the lck Vi winning rate is nearly 1 to 1.
-
-We have a pie chart of Vi win rate in lpl in wlds.
+This shows that the lck Vi winning rate is nearly 1 to 1.  
+  
+We have a pie chart of Vi win rate in lpl in wlds.  
 <iframe
   src="assets/wlds_lpl_Vi_win_rate.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
-This shows that the lpl Vi in wlds winning rate is nearly 1 to 1.
-
-We have a pie chart of Vi win rate in lck in wlds.
+This shows that the lpl Vi in wlds winning rate is nearly 1 to 1.  
+  
+We have a pie chart of Vi win rate in lck in wlds.  
 <iframe
   src="assets/wlds_lck_Vi_win_rate.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
-This shows that the lck Vi in wlds winning rate is nearly 1 to 1.
+This shows that the lck Vi in wlds winning rate is nearly 1 to 1.  
